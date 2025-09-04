@@ -504,16 +504,16 @@ def main():
     """Main execution function for BigQuery/Dataproc pipeline"""
     
     # Configuration - Update these values for your environment
-    PROJECT_ID = "your-project-id"  # Replace with your GCP project ID
-    DATASET_ID = "spark_pipeline_demo"  # BigQuery dataset name
-    BUCKET_NAME = "your-temp-bucket"  # Replace with your GCS bucket name
+    PROJECT_ID = "gcp-pde-466109"  # Replace with your GCP project ID
+    DATASET_ID = "my_pipeline_dataset"  # BigQuery dataset name
+    BUCKET_NAME = "my_pipeline_bucket_2363"  # Replace with your GCS bucket name
     
     # Validate configuration
-    if PROJECT_ID == "your-project-id" or BUCKET_NAME == "your-temp-bucket":
+    if PROJECT_ID == "gcp-pde-466109" or BUCKET_NAME == "my_pipeline_bucket_2363":
         print("❌ Please update PROJECT_ID and BUCKET_NAME in the configuration section")
         print("Update the following variables in main():")
-        print("  PROJECT_ID = 'your-actual-project-id'")
-        print("  BUCKET_NAME = 'your-actual-bucket-name'")
+        print("  PROJECT_ID = 'gcp-pde-466109'")
+        print("  BUCKET_NAME = 'my_pipeline_bucket_2363'")
         return
     
     print(f"🚀 Starting BigQuery/Dataproc Pipeline Demo")
